@@ -38,18 +38,20 @@ console.log('lesson 3');
 //         console.log('res3', res3)
 //     })
 
-let userDataProm = new Promise((resolve, reject) => {
-// симулируем запрос
-    setTimeout((response) => {
-        if (response.HTTPstatus >= 200 && response.HTTPstatus < 400) {
-            resolve(response.body.access_token);
-        } else {
-            reject(response.error);
-        }
-    }, 1000, {HTTPstatus: 200, body: {access_token: 'sdfgsfsfhdhadfhdafhuccess'}, error: ''})
-});
+// let userDataProm = new Promise((resolve, reject) => {
+// // симулируем запрос
+//     setTimeout((response) => {
+//         if (response.HTTPstatus >= 200 && response.HTTPstatus < 400) {
+//             resolve(response.body.access_token);
+//         } else {
+//             reject(response.error);
+//         }
+//     }, 1000, {HTTPstatus: 200, body: {access_token: 'sdfgsfsfhdhadfhdafhuccess'}, error: ''})
+// });
 
-console.log(userDataProm)
+
+
+
 // just a plug
 export default () => {
 };
