@@ -111,6 +111,38 @@ console.log(new AnyClass())
 // Создать производный класс – грузовик, имеющий грузоподъемность кузова.
 // Определить функции переназначения марки и грузоподъемности.
 
+
+class Car {
+
+    mark: string
+    rounds: number
+
+    constructor(mark: string, rounds: number) {
+        this.mark = mark
+        this.rounds = rounds
+    }
+
+    showInfo() {
+        console.log(this)
+    }
+
+}
+
+// @ts-ignore
+window.Car = new Car('Audi', 10, 700)
+
+class BigCar extends Car {
+
+    weigth: number
+    rounds: number
+
+    constructor(mark: string, rounds: number, weigth: number) {
+        super(mark, rounds);
+        this.weigth = weigth
+        this.rounds = rounds
+    }
+}
+
 // just a plug
 export default () => {
 };
