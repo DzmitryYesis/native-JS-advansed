@@ -29,7 +29,9 @@ console.log('Lesson 6');
 // const students = [Dima, Vasia, Kisa]
 // const bestStudent = students.filter(st=>st.score.filter(sc=>sc>3).length===5)
 //
+// const sortStudent = students.sort((a,b)=>b.score.reduce((c, d)=>c+d,0)-a.score.reduce((c, d)=>c+d,0))
 //
+// console.log(sortStudent)
 // console.log(bestStudent)
 
 
