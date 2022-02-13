@@ -65,6 +65,47 @@ console.log(new AnyClass())
 // Создать массив объектов данного класса.
 // Вывести список покупателей в алфавитном порядке и список покупателей, у которых номер кредитной карточки находится в заданном диапазоне.
 
+// class Customer {
+//     name:string
+//     lastName:string
+//     adress:string
+//     bankNumber:number
+//     constructor(name:string, lastName:string, adress:string, bankNumber:number) {
+//         this.name = name
+//         this.lastName = lastName
+//         this.adress = adress
+//         this.bankNumber = bankNumber
+//     }
+//     setName(name:string){
+//         this.name = name
+//     }
+//     setLastName(lastName:string){
+//         this.lastName = lastName
+//     }
+//     setAdress(adress:string){
+//         this.adress = adress
+//     }
+//     setBankNumber(bankNumber:number){
+//         this.bankNumber = bankNumber
+//     }
+//     getInfo(){
+//         console.log(this.name, this.lastName, this.adress, this.bankNumber)
+//     }
+// }
+//
+// const Dima = new Customer('Dima', 'Yesis', 'Baranovichi', 15)
+// console.log(Dima)
+// Dima.setAdress('Minsk')
+// console.log(Dima)
+// const Nastya = new Customer('Nastya', 'Yesis', 'Minsk', 14)
+// const Pasha = new Customer('Pasha', 'Yesis', 'Minsk',16)
+//
+// const spisok = [Dima, Nastya, Pasha]
+// const alfavit = spisok.sort((a,b)=>a.name>b.name?1:-1)
+// const bank = spisok.filter(c=>c.bankNumber>15&&c.bankNumber<18)
+// console.log(alfavit)
+// console.log(bank)
+
 // Task 05
 // Создать класс машина - имеющий марку, число цилиндров, мощность. Определить конструктор и функцию печати.
 // Создать производный класс – грузовик, имеющий грузоподъемность кузова.
