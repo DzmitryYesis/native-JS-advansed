@@ -47,6 +47,25 @@ result.sleep()
 // параметра, реализовать методы roar и climb аналогично классу Animal
 // проверить, что все методы работают
 
+class Monkey extends Animal {
+    constructor(name='Monkey') {
+        super(name);
+    }
+    roar(){
+        console.log(`${this.name} roar`)
+    }
+    climb(){
+        console.log(`${this.name} climb`)
+    }
+}
+
+let result2 = new Monkey()
+
+result2.walk()
+result2.eat()
+result2.sleep()
+result2.roar()
+result2.climb()
 
 //Task 03
 // Реализовать класс Human на базе класса Monkey, конструктор принимает name(по умолчанию 'Human') в качестве
