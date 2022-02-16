@@ -72,6 +72,28 @@ result2.climb()
 // параметра, реализовать методы speak и think аналогично классу Animal
 // проверить, что все методы работают
 
+class Human extends Monkey {
+    constructor(name = 'Human') {
+        super(name);
+    }
+    speak(){
+        console.log(`${this.name} speak`)
+    }
+    think(){
+        console.log(`${this.name} think`)
+    }
+}
+
+let result3 = new Human()
+
+result3.walk()
+result3.eat()
+result3.sleep()
+result3.roar()
+result3.climb()
+result3.speak()
+result3.think()
+
 
 // Task 04
 // Реализовать таски 01-03 через функции конструкторы в отдельном JS файле, реализовать наследование
